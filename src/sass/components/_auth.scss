@@ -1,0 +1,65 @@
+.auth {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    &__title {
+        font-size: 4.2rem;
+        color: $color-tertiary;
+        margin-top: 4rem;
+        margin-bottom: 1rem;
+    }
+
+    &__lead {
+        font-size: 2.4rem;
+        color: $color-quaternary;
+        margin-bottom: 2rem;
+    }
+
+    &__form {
+        &__group {
+            margin-bottom: 1rem;
+        }
+
+        &__input {
+            font-size: 1.6rem;
+            padding: 1rem 1.5rem;
+            outline-color: $color-quaternary;
+        }
+
+        &__button {
+            font-size: 1.6rem;
+            padding: 0.5rem 0;
+            width: 100%;
+            margin-left: 10%;
+            background-color: $color-quaternary;
+            color: $color-white;
+            border: 0.1rem solid $color-quaternary;
+            border-radius: 0.5rem;
+            cursor: pointer;
+            margin-top: 1rem;
+            margin-bottom: 2rem;
+            outline: none;
+
+            &:hover {
+                color: $color-white;
+                background-color: $color-tertiary;
+            }
+        }
+    }
+
+    &__authtext {
+        font-size: 1.6rem;
+        color: $color-paragraph;
+
+        &__link {
+            text-decoration: none;
+            color: $color-quaternary;
+
+            &:hover {
+                color: $color-link-hover;
+            }
+        }
+    }
+}

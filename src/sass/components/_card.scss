@@ -1,0 +1,69 @@
+.card {
+    padding: 4rem 3rem;
+    background-color: $color-grey-light;
+    border-radius: 0.5rem;
+    &:hover {
+        transition: all 0.2s ease-out;
+        transform: scale(1.3);
+        box-shadow: 0px 4px 8px rgba(38, 38, 38, 0.2);
+        top: -4px;
+        border: 1px solid #cccccc;
+        background-color: white;
+      }
+    
+    &__header {
+        width: 100%;
+
+        &__photo {
+            width: 100%;
+        }
+    }
+
+    &__title {
+        color: $color-tertiary;
+        font-size: 2.4rem;
+        margin-bottom: 2rem;
+    }
+
+    &__location {
+        font-size: 1.4rem;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+    }
+
+    &__info {
+        font-size: 1.6rem;
+        color: $color-tertiary;
+        margin-bottom: 0.5rem;
+    }
+
+    &__saletype {
+        font-size: 1.6rem;
+        color: $color-green;
+        margin-bottom: 0.5rem;
+    }
+
+    &__hometype {
+        font-size: 1.6rem;
+        color: $color-tertiary;
+        margin-bottom: 0.5rem;
+    }
+
+    &__sqft {
+        font-size: 1.4rem;
+    }
+
+    &__link {
+        font-size: 1.6rem;
+        color: $color-tertiary;
+        padding: 1rem 1.5rem;
+        border: 0.1rem solid $color-tertiary;
+        text-decoration: none;
+
+        &:hover {
+            color: $color-white;
+            border: 0.1rem solid $color-secondary;
+            background-color: $color-tertiary;
+        }
+    }
+}

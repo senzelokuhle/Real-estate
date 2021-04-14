@@ -21,7 +21,7 @@ const ListingDetail = (props) => {
             }
         };
 
-        axios.get(`http://104.236.91.135/api/listings/${slug}`, config)
+        axios.get(`http://104.236.212.4/api/listings/${slug}`, config)
         .then(res => {
             setListing(res.data);
             setPrice(numberWithCommas(res.data.price));
@@ -41,7 +41,7 @@ const ListingDetail = (props) => {
         };
 
         if (id) {
-            axios.get(`http://104.236.91.135/api/smart_stay/${id}`, config)
+            axios.get(`http://104.236.212.4/api/smart_stay/${id}`, config)
             .then(res => {
                 setRealtor(res.data);
             })

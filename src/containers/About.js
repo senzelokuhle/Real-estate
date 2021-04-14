@@ -16,7 +16,7 @@ const About = () => {
 
         const getTopSeller = async () => {
             try {
-                const res = await axios.get(`http://104.236.91.135/api/smart_stay/topseller`, config);
+                const res = await axios.get(`http://104.236.212.4/api/smart_stay/topseller`, config);
                 setTopSeller(res.data);
             }
             catch (err) {
@@ -36,7 +36,7 @@ const About = () => {
 
         const getRealtors = async () => {
             try {
-                const res = await axios.get(`http://104.236.91.135/api/smart_stay/`, config);
+                const res = await axios.get(`http://104.236.212.4/api/smart_stay/`, config);
                 setRealtors(res.data);
             }
             catch (err) {

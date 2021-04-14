@@ -16,7 +16,7 @@ const Listings = () => {
 
         const fetchData = async () => {
             try {
-                const res = await axios.get(`http://104.236.91.135/api/listings/?page=1`);
+                const res = await axios.get(`http://104.236.212.4/api/listings/?page=1`);
 
                 setListings(res.data.results);
                 setCount(res.data.count);
@@ -74,7 +74,7 @@ const Listings = () => {
     };
 
     const visitPage = (page) => {
-        axios.get(`http://104.236.91.135/api/listings/?page=${page}`)
+        axios.get(`http://104.236.212.4/api/listings/?page=${page}`)
         .then(res => {
             setListings(res.data.results);
             setPrevious(res.data.previous);
